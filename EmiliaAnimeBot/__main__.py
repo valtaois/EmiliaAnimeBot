@@ -21,7 +21,7 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-EMILIA_IMG = "https://telegra.ph/file/b37cec509d121c8c63518.jpg"
+EMILIA_IMG = "https://telegra.ph/file/c13d2c450e047a095ea18.jpg"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -63,29 +63,29 @@ You can find my list of available commands with *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ ADD YUUKI TO YOUR GROUP ➕",url="t.me/YuukiKonnoRobot?startgroup=true"
+            text="😍𝗦𝗨𝗠𝗠𝗢𝗡 𝗠𝗘😍",url="t.me/YuukiKonnoRobot?startgroup=true"
         ),
     ],
     [
         InlineKeyboardButton(
-          text="🔐 Commands", callback_data="help_back"
+          text="🥰𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦🥰", callback_data="help_back"
         ),
     ],
    
          
     [
        InlineKeyboardButton(
-           text="🐱 Support", url="https://t.me/PigasusSupport"
+           text="💖𝗦𝗨𝗣𝗣𝗢𝗥𝗧💖", url="https://t.me/PigasusSupport"
          ),
     ],
         [
        InlineKeyboardButton(
-           text="MY OWNER 🔥", url="https://t.me/Me_Iz_Mad_Boi"
+           text="💝𝗢𝗪𝗡𝗘𝗥💝", url="https://t.me/Me_Iz_Mad_Boi"
          ),
      ],
      [
         InlineKeyboardButton(
-          text="📮 Updates", url="https://t.me/PigasusUpdates"
+          text="💖𝗨𝗣𝗗𝗔𝗧𝗘𝗦💖", url="https://t.me/PigasusUpdates"
         ),
        
      ],
@@ -93,7 +93,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Emilia!]("https://telegra.ph/file/e5fc94ada18369f89c832.jpg") 
+`Hey there! My name is` [Yuuki!]("https://telegra.ph/file/72f58e5643fe6b39f5cca.jpg") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! \n`Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """
@@ -217,13 +217,13 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PigasusSupport")
+                  InlineKeyboardButton(text="💞𝗦𝗨𝗣𝗣𝗢𝗥𝗧💞", url="https://t.me/PigasusSupport")
                   ],
                   [
-                  InlineKeyboardButton(text="Source", url="https://github.com/EmiliaAnimeBot")
+                  InlineKeyboardButton(text="💞𝗦𝗢𝗨𝗥𝗖𝗘💞", url="https://github.com/EmiliaAnimeBot")
                   ],
                   [
-                  InlineKeyboardButton(text="Owner", url="https://t.me/Me_Iz_Mad_Boi")
+                  InlineKeyboardButton(text="💘𝗢𝗪𝗡𝗘𝗥💘", url="https://t.me/Me_Iz_Mad_Boi")
                   ]
                 ]
             ),
@@ -357,14 +357,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Emilia*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Yuuki*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *Emilia*, let us know at .""",
+                 \n\nIf you have any question about *Yuuki*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -390,7 +390,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👩‍💼 I'm *Emilia*
+            text=""" Hi..👩‍💼 I'm *Yuuki*
                  \nMy Source Code Can be Found at Github at this [Link](https://github.com/IzumiCypherX/EmiliaAnimeBot""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -465,7 +465,7 @@ def get_help(update: Update, context: CallbackContext):
             InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="help_back"),
                                 InlineKeyboardButton(
-                                    text="Support", url="https://telegram.dog/TangentChats"
+                                    text="Support", url="https://t.me/PigasusSupport"
                                 )]]
             ),
         )
