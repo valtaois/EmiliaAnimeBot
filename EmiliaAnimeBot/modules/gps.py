@@ -33,3 +33,14 @@ async def _(event):
     except Exception as e:
         print(e)
         await event.reply("I can't find that")
+
+        
+        
+__help__ = """
+ *See A Place's Map With The Help Of Google Map:*
+  - /gps Chennai
+  - /gps New York
+ Usage: hahaha just a Gps.
+ 
+
+__mod_name__ = "GPS"
