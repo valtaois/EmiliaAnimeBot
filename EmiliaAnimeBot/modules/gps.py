@@ -41,6 +41,7 @@ __help__ = """
   - /gps Chennai
   - /gps New York
  Usage: hahaha just a Gps.
- 
+ warning: Don't Use This Command Much Times.
+"""
 
-__mod_name__ = "GPS"
+__mod_name__ = "Gps"
