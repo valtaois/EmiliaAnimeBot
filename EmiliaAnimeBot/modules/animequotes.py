@@ -13,7 +13,7 @@ from EmiliaAnimeBot.modules.helper_funcs.chat_status import (is_user_admin)
 from EmiliaAnimeBot.modules.helper_funcs.extraction import extract_user
 
 @run_async
-def animequotes(update: Update, context: CallbackContext):
+def yukkiquotes(update: Update, context: CallbackContext):
     message = update.effective_message
     name = message.reply_to_message.from_user.first_name if message.reply_to_message else message.from_user.first_name
     reply_photo = message.reply_to_message.reply_photo if message.reply_to_message else message.reply_photo
@@ -21,14 +21,14 @@ def animequotes(update: Update, context: CallbackContext):
         random.choice(animequotes_strings.QUOTES_IMG))
 
 __help__ = """
- • `/animequotes`*:* gives random anime quotes
+ • `/yukkiquotes`*:* get Cute And Motivational Yukki Quates Thanks To @AASFCYBERKING
  
 """
 ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes)
 
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 
-__mod_name__ = "AnimeQuotes"
+__mod_name__ = "YukkiQuotes"
 __command_list__ = [
     "animequotes"
 ]
