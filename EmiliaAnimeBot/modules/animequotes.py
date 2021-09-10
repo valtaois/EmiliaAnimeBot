@@ -24,13 +24,13 @@ __help__ = """
  • `/yukkiquotes`*:* get Cute And Motivational Yukki Quates Thanks To @AASFCYBERKING
  
 """
-ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes)
+ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("yukkiquotes", yukkiquotes)
 
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 
 __mod_name__ = "YukkiQuotes"
 __command_list__ = [
-    "animequotes"
+    "yukkiquotes"
 ]
 __handlers__ = [
     ANIMEQUOTES_HANDLER
