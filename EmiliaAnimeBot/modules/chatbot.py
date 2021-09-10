@@ -20,10 +20,6 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
 BOT_ID = 1975581385
 
-__mod_name__ = "ChatBot"
-__help__ = """
-/chatbot [ENABLE|DISABLE] To Enable Or Disable ChatBot In Your Chat.
-"""
 
 active_chats_bot = []
 
