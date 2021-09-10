@@ -18,7 +18,7 @@ aiohttpsession = ClientSession()
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
 
-BOT_ID = 1975581385
+BOT_ID = 1999577962
 
 
 active_chats_bot = []
