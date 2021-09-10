@@ -94,3 +94,7 @@ async def chatbot_talk(_, message: Message):
     if message.reply_to_message.from_user.id != BOT_ID:
         return
     await type_and_send(message)
+
+__mod_name__ = "ChatBot"
+__help__ = """
+/chatbot [ENABLE|DISABLE] To Enable Or Disable ChatBot In Your Chat.
