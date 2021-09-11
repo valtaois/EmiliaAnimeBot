@@ -21,7 +21,7 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-EMILIA_IMG = "https://telegra.ph/file/c13d2c450e047a095ea18.jpg"
+EMILIA_IMG = "https://telegra.ph/file/1682027883777783a43a9.mp4"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -54,46 +54,56 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey There! [👩‍💼](https://telegra.ph/file/d62ddd0f18b333b6aafff.jpg) 
-My name is *Yuuki*
-I am an Anime Themed group management bot.
+Hey There! [🧑](https://telegra.ph/file/1682027883777783a43a9.mp4) 
+My name is *VALT AOI*
+I am a beyblade themed group managment bot.
+Managed by Pigasus Updates for Your Telegram Group
+join in @PigasusUpdates and @PigasusSupport
 You can find my list of available commands with *🔐Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="😍𝗦𝗨𝗠𝗠𝗢𝗡 𝗠𝗘😍",url="t.me/YuukiKonnoRobot?startgroup=true"
+            text="➕️ ADD VALT AOI TO YOUR GROUP ➕️",url="t.me/VALTAOITHEBOT?startgroup=true"
         ),
     ],
     [
         InlineKeyboardButton(
-          text="🥰𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦🥰", callback_data="help_back"
+          text="🔐 Commands", callback_data="help_back"
         ),
     ],
-   
+    [
+        InlineKeyboardButton(
+          text="📮 Updates", url="https://t.me/PigasusUpdates"
+        ),
+      
+        InlineKeyboardButton(
+          text="CHECK MY FRIEND", url="http://t.me/Aigerakabanethebladerbot"
+        ),
+    ],
          
     [
        InlineKeyboardButton(
-           text="💖𝗦𝗨𝗣𝗣𝗢𝗥𝗧💖", url="https://t.me/PigasusSupport"
+           text="🐱 Support", url="https://t.me/PigasusSupport"
          ),
     ],
-        [
-       InlineKeyboardButton(
-           text="💝𝗢𝗪𝗡𝗘𝗥💝", url="https://t.me/Me_Iz_Mad_Boi"
+    [
+      InlineKeyboardButton(
+           text="MY OWNER", url="https://t.me/Rohith_no_1"
          ),
-     ],
-     [
+    ],
+    [
         InlineKeyboardButton(
-          text="💖𝗨𝗣𝗗𝗔𝗧𝗘𝗦💖", url="https://t.me/PigasusUpdates"
+          text="✒ Source", callback_data="source_"
         ),
-       
-     ],
+     
+    ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Yuuki!]("https://telegra.ph/file/72f58e5643fe6b39f5cca.jpg") 
+`Hey there! My name is` [VALT AOI!]("https://telegra.ph/file/1682027883777783a43a9.mp4") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! \n`Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """
@@ -210,20 +220,20 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "YUUKI is Here For You❤️\nI am Awake Since: <code>{}</code>".format(
+            EMILIA_IMG, caption= "VALT AOI is Here For You❤️\nI am Awake Since: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="💞𝗦𝗨𝗣𝗣𝗢𝗥𝗧💞", url="https://t.me/PigasusSupport")
+                  InlineKeyboardButton(text="SUPPORT", url="https://t.me/PigasusSupport")
                   ],
                   [
-                  InlineKeyboardButton(text="💞𝗦𝗢𝗨𝗥𝗖𝗘💞", url="https://github.com/EmiliaAnimeBot")
+                  InlineKeyboardButton(text="SOURCE", url="https://github.com/EmiliaAnimeBot")
                   ],
                   [
-                  InlineKeyboardButton(text="💘𝗢𝗪𝗡𝗘𝗥💘", url="https://t.me/Me_Iz_Mad_Boi")
+                  InlineKeyboardButton(text="OWNER", url="https://t.me/Rohith_no_1")
                   ]
                 ]
             ),
@@ -357,14 +367,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Yuuki*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *VALT AOI*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *Yuuki*, let us know at .""",
+                 \n\nIf you have any question about *VALT AOI*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -390,7 +400,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👩‍💼 I'm *Yuuki*
+            text=""" Hi..👩‍💼 I'm *VALT AOI*
                  \nMy Source Code Can be Found at Github at this [Link](https://github.com/IzumiCypherX/EmiliaAnimeBot""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -691,7 +701,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yuuki is Back Online💼")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "VALT AOI is Back Online💼")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
