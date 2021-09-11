@@ -40,4 +40,3 @@ async def PokeDex(_, message):
                 print(str(e))
                 pass
     await message.reply_photo(photo=poke_img, caption=caption)
-© 2021 GitHub, Inc.
